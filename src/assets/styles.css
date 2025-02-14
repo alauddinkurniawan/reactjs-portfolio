@@ -1,0 +1,791 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width : 100%;
+    min-width: 450px;
+    scroll-behavior: smooth;
+    scroll-snap-type:proximity;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.hover-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Adjust spacing between items */
+    align-items: center; /* Ensure the items inside also align properly */
+}
+
+.hover-text span {
+    display: inline-block;
+    transition: color 0.1s ease-in-out;
+    
+    will-change: color;
+}
+
+.hover-text span:hover{
+    color :#fbc02d ;
+}
+
+.hover-text-top:hover {
+    color: #fbc02d;
+    user-select: none;
+}
+
+.hover-text-bottom:hover {
+    color: white !important;
+}
+
+.name {
+    display: flex; /* Use flex to treat the entire text as a block */
+    justify-content: left; /* Optionally, center the text */
+    align-items: center; /* Optionally, vertically align */
+    height: 35px;
+    color: snow;
+}
+
+.name span {
+    display: inline-block; /* Ensures each letter is inline, but will remain together when stretched */
+}
+
+
+/* Hide scrollbar */
+body {
+    overflow-y: scroll; /* Ensures scrolling works even when hidden */
+    font-family: kelvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Minimal scrollbar */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #fdd835;
+    border-radius: 5px;
+}
+
+
+/* Header Styles */
+header {
+    position: fixed; /* Keep the header fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.75rem 0;
+    z-index: 10;
+    transition: top 0.3s ease-in-out, background-color 0.2s ease-in-out; /* Smooth transition for hiding/showing */
+    display: flex;
+}
+
+
+
+.headerbtns-top:hover {
+    color: #fbc02d;
+}
+
+.header-top {
+    background-color: transparent;
+    transition:  top 0.3s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.header-bottom {
+    /*background: linear-gradient(45deg, yellow, #fbc02d, #ffd700); */
+    background-color: #fbc02d;
+    transition:  top 0.3s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.headerbtns-bottom {
+    color: #333;
+    
+}
+
+.headerbtns-bottom:hover {
+    color: white;
+}
+
+.name-bottom {
+    color: #333;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-family: kelvetica, Arial, sans-serif ;
+    font-style: normal;
+    color: #333;
+    font-weight: bold;
+    cursor : default;
+    user-select: none;
+}
+
+header nav ul {
+    list-style: none;
+    font-family: kelvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Adjust spacing between items */
+    align-items: center; /* Ensure the items inside also align properly */
+}
+
+header nav ul li {
+    margin-left: 2rem;
+    user-select: none;
+    font-family: kelvetica, Arial, sans-serif;
+}
+
+header nav ul :hover {
+    color: #fbc02d;
+    transition: ease-in-out;
+    user-select: none;
+    font-family: kelvetica, Arial, sans-serif;
+}
+
+header nav ul li a  {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 300ms;
+
+}
+
+header nav ul * {
+    transition: scale 300ms, filter 300ms;
+} 
+
+header nav ul:has(:hover) :not(:hover) {
+    scale: 0.9;
+    filter: blur(0.5px);
+}
+
+
+
+.nav-links {
+    gap: 20px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Adjust spacing between items */
+    align-items: center; /* Ensure the items inside also align properly */
+}
+
+/* Hide the menu button by default */
+.menu-btn {
+    font-family: kelvetica, Arial, sans-serif;
+    font-size: large;
+    display: none;
+    background: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+
+    text-decoration: none;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -15rem; /* Initially hidden */
+    width: 15rem;
+    height: 100%;
+    background: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    transition: right 0.3s ease-in-out;
+}
+
+/* Sidebar links */
+.sidebar nav a {
+    color: white;
+    text-decoration: none;
+    width: 15rem;
+    padding: 1rem;
+    text-align: right;
+    display: block;
+}
+
+.sidebar nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Overlay to darken background when sidebar is open */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 999; /* Keep below the sidebar */
+  }
+
+/* When sidebar is open */
+.sidebar.active {
+    right: 0;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* General Section Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+h2 {
+    width: 80%;
+}
+
+/* .about {
+    color: red;
+} */
+
+/* About Me Section */
+.about-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+
+
+    padding: 50px;
+    margin-top : 10px;
+    margin-bottom: 10px;
+    
+}
+
+.about-photo {
+    width: 25vw; /* Enlarge when screen shrinks */
+    max-width: 300px; /* Limit size */
+    min-width: 100px; /* Prevent shrinking too small */
+    border-radius: 2.5%;
+    margin-left : 50px;
+    object-fit: cover;
+    flex-shrink: 1;
+    transition: width 0.3s ease;
+    resize: both;
+}
+
+.about-text {
+    flex: 1;
+    margin : 2rem;
+    text-align: justify;
+    margin-top : 10px;
+    margin-bottom: 10px;
+}
+
+.about-text h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top : 10px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.about-text p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    padding-right: 20px;
+    margin-top : 10px;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects .grid {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+    place-items: center;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    min-width: 250px;
+    text-align: center;
+}
+
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.card p {
+    text-align: justify;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+#squircle-border {
+    margin-bottom: 100px;
+}
+
+#squircle-border ul {
+    list-style : none;
+    padding : 0;
+}
+
+#squircle-border li{
+    display : inline-block;
+    margin : 5px;
+    padding : 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    border : 1px solid #ccc;
+    transition: all 0.3 ease;
+    cursor: default;
+}
+
+#squircle-border li:hover {
+    background-color: #e0e0e0; /* Slight change on hover */
+    border-color: #888; /* Darken the border on hover */
+}
+
+#contacts .text {
+    display: flex; /* Use flexbox for layout */
+    justify-content: left; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+
+    .nav-links {
+        display: none; /* Hide the navigation links */
+    }
+    
+    .menu-btn {
+        display: block; /* Show the menu button */
+    }
+
+    .menu-btn:hover {
+        
+        transition: ease-in-out;
+        user-select: none;
+    }
+
+    .menu-btn-top {
+        color : snow;
+    }
+
+    .menu-btn-top:hover {
+        color :#fbc02d
+    }
+    
+    .menu-btn-bottom {
+        color : #333;
+    }
+
+    .menu-btn-bottom:hover {
+        color : white;
+    }
+
+    header nav ul li {
+        text-align: center;
+        display: flex;
+        align-items: center;
+       
+        user-select: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+
+        
+
+    }
+
+    .about-photo {
+        width: 100vh; /* Increase size for smaller screens */
+        margin-left: 0px;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    .about-text h2{
+        text-align: center;
+        margin-left : auto;
+        margin-right : auto;
+
+    }
+
+    .about-text p {
+        padding-right: 25px;
+        padding-left: 25px;
+        
+    }
+}
+
+/*#region Hero-Section */
+#hero {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh; /* Makes it the full height of the viewport */
+    overflow: hidden; /* Prevents content from overflowing the section */
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+     /* Semi-transparent black overlay */
+    z-index: -1; /* Keep it behind the text */
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./Hero_Banner.png') no-repeat center center/cover; /* Your background image */
+    background-color: #333;
+    filter: blur(8px); 
+    z-index: -2; /* Keep behind overlay */
+    
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Adjust spacing between items */
+    align-items: center; /* Ensure the items inside also align properly */
+    position: relative !important;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Ensures text is centered */
+    height: 100vh; /* Make it take full viewport height */
+    width:100vh;
+    
+}
+
+.hero-container h2{
+    position: relative !important;
+    cursor: default !important;
+    text-align: center;
+}
+
+
+.hero-container a {
+    display: inline-flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    position: relative !important;
+}
+
+.hero-button {
+    padding: 7.5px;
+    width: 11rem;
+    font-size: 1rem;
+    font-family: kelvetica, arial, helvetica;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1;
+    transition: 300ms;
+    background : transparent;
+    gap: 15px;
+    /* border-color: white;
+    border: 2px solid white;
+    border-radius: 9px; */
+}
+
+.hero-button:hover {
+    color: #fbc02d;
+    border-color: #fbc02d;
+    transition: ease-in-out;
+}
+
+/*#endregion Hero Section */
+
+/*#region Animation for Infinite Scroll*/
+
+.scroller {
+
+    position: relative;
+    max-width: fit-content;
+    overflow :  hidden;
+    /* max-height: ; */
+  }
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.5rem;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 30s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+/*#endregion Animation for Infinite Scroll*/
+
+
+/* Animation of Typing subtitles */
+  
+#animated-role {
+    position: absolute !important;
+    font-weight: small;
+    font-size: 1.2rem;
+    color: white; /* Adjust to match your design */
+    border-right: 2px solid grey; /* Blinking cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    align-items: center;
+    display: inline-block;
+    animation: blink 0.7s steps(1) infinite;
+
+}
+
+.animated-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1.5rem; /* Ensures enough height */
+    min-width: fit-content; /* Allows it to expand based on text */
+    white-space: nowrap; /* Keeps text on one line */
+    overflow: visible; /* Prevents cutting off text */
+    text-align: center;
+    position: relative;
+    padding-top: 35px;
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@font-face {
+    font-family: quickZIP ;
+    src: url(/src/assets/font_faces/QUICK-ZIP.otf);
+}
+
+@font-face {
+    font-family: kelvetica;
+    src: url(/src/assets/font_faces/KelveticaNobis-A5z6.ttf);
+}
+
+/* General Styles
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+.carousel-wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    max-width: 45%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 10px;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.carousel-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        max-width: 90%;
+    }
+} */
+

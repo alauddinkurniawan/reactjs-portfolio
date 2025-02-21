@@ -38,7 +38,7 @@ function About() {
     <section id="about">
       <div className="about-container">
         <img
-          src="./src/assets/foto.jpeg"
+          src="/src/assets/foto.jpeg"
           alt="My Photo"
           className="about-photo"
         />
@@ -63,22 +63,22 @@ function About() {
           <div className="scroller__inner">
             <img
               height="100px"
-              src="./src/assets/Aiesec_Bandung.png"
+              src="/src/assets/Aiesec_Bandung.png"
               alt="AIESEC In Bandung"
             />
             <img
               height="100px"
-              src="./src/assets/Ses.png"
+              src="/src/assets/Ses.png"
               alt="Student English Society"
             />
             <img
               height="100px"
-              src="./src/assets/Kontent_Logo.png"
+              src="/src/assets/Kontent_Logo.png"
               alt="Kontent HIMA IF"
             />
             <img
               height="100px"
-              src="./src/assets/Nabati_Logo.png"
+              src="/src/assets/Nabati_Logo.png"
               alt="Nabati Group"
             />
           </div>

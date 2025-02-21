@@ -431,7 +431,7 @@ footer {
     display: flex; /* Use flexbox for layout */
     justify-content: left; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-    
+
 }
 
 /* Responsive Styles */

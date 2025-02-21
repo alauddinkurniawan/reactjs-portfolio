@@ -9,18 +9,27 @@ function Contacts() {
             style={{ paddingRight: "5px" }}
           >
             <img
-              src="../../../src/assets/linkedin_logo.png"
+              src="/linkedin_logo.png"
               height="30px"
               style={{ paddingRight: "5px" }}
             ></img>
           </a>
           <a href="https://github.com/alauddinkurniawan">
             <img
-              src="../../../src/assets/github_logo.png"
+              src="/github_logo.png"
               height="30px"
               style={{ paddingRight: "5px" }}
             ></img>
           </a>
+          <a href="mailto:alauddin.kurniawan@gmail.com">
+            <img
+              src="/icons8-email.png"
+              height="30px"
+              width="37.5px"
+              style={{ paddingLeft: "5px",paddingRight: "5px" }}
+            ></img>
+          </a>
+          
         </div>
       </div>
     </section>

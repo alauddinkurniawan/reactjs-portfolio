@@ -126,7 +126,7 @@ const Header = () => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="src/pages/projects.html">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
               <a href="#squircle-border">Skills</a>

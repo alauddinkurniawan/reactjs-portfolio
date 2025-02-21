@@ -47,10 +47,10 @@ function About() {
       <div className="container" ref={scrollerRef}>
         <div className="scroller" data-direction="right" data-speed="fast">
           <div className="scroller__inner">
-            <img height="100px" src="../../../src/assets/Aiesec_Bandung.png" alt="AIESEC In Bandung" />
-            <img height="100px" src="../../../src/assets/Ses.png" alt="Student English Society" />
-            <img height="100px" src="../../../src/assets/Kontent_Logo.png" alt="Kontent HIMA IF" />
-            <img height="100px" src="../../../src/assets/Nabati_Logo.png" alt="Nabati Group" />
+            <img height="100px" src="reactPortfolio/src/assets/Aiesec_Bandung.png" alt="AIESEC In Bandung" />
+            <img height="100px" src="reactPortfolio/src/assets/Ses.png" alt="Student English Society" />
+            <img height="100px" src="reactPortfolio/src/assets/Kontent_Logo.png" alt="Kontent HIMA IF" />
+            <img height="100px" src="reactPortfolio/src/assets/Nabati_Logo.png" alt="Nabati Group" />
           </div>
         </div>
       </div>

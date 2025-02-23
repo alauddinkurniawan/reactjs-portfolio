@@ -1,15 +1,23 @@
 import { useEffect } from "react";
 
+import { Link } from "react-router-dom";
+
 const Header = () => {
   useEffect(() => {
     const header = document.querySelector("header") as HTMLElement | null;
-    const headerButtons = document.querySelectorAll<HTMLAnchorElement>("header nav ul li a");
+    const headerButtons =
+      document.querySelectorAll<HTMLAnchorElement>("header nav ul li a");
     const nameElements = document.querySelectorAll<HTMLElement>(".name");
-    const menuBtn = document.querySelector(".menu-btn") as HTMLButtonElement | null;
-    const closeButton = document.querySelector(".close-btn") as HTMLButtonElement | null;
+    const menuBtn = document.querySelector(
+      ".menu-btn"
+    ) as HTMLButtonElement | null;
+    const closeButton = document.querySelector(
+      ".close-btn"
+    ) as HTMLButtonElement | null;
     const sidebar = document.querySelector(".sidebar") as HTMLElement | null;
     const overlay = document.querySelector(".overlay") as HTMLElement | null;
-    const hoverSpan = document.querySelectorAll<HTMLElement>(".hover-text span");
+    const hoverSpan =
+      document.querySelectorAll<HTMLElement>(".hover-text span");
 
     let lastScrollY = window.scrollY;
 
@@ -30,16 +38,23 @@ const Header = () => {
         header.classList.add("header-top");
         header.classList.remove("header-bottom");
 
-        headerButtons.forEach((button) => button.classList.add("headerbtns-top"));
+        headerButtons.forEach((button) =>
+          button.classList.add("headerbtns-top")
+        );
         nameElements.forEach((name) => name.classList.add("name-top"));
         menuBtn?.classList.add("menu-btn-top");
         hoverSpan.forEach((span) => span.classList.add("hover-text-top"));
 
-        headerButtons.forEach((button) => button.classList.remove("headerbtns-bottom"));
+        headerButtons.forEach((button) =>
+          button.classList.remove("headerbtns-bottom")
+        );
         nameElements.forEach((name) => name.classList.remove("name-bottom"));
         menuBtn?.classList.remove("menu-btn-bottom");
         hoverSpan.forEach((span) => span.classList.remove("hover-text-bottom"));
-      } else if (window.scrollY > lastScrollY && window.scrollY > 0.9 * window.innerHeight) {
+      } else if (
+        window.scrollY > lastScrollY &&
+        window.scrollY > 0.9 * window.innerHeight
+      ) {
         header.style.top = "-100px";
       } else {
         header.style.top = "0";
@@ -49,12 +64,16 @@ const Header = () => {
         header.classList.remove("header-top");
         header.classList.add("header-bottom");
 
-        headerButtons.forEach((button) => button.classList.remove("headerbtns-top"));
+        headerButtons.forEach((button) =>
+          button.classList.remove("headerbtns-top")
+        );
         nameElements.forEach((name) => name.classList.remove("name-top"));
         menuBtn?.classList.remove("menu-btn-top");
         hoverSpan.forEach((span) => span.classList.remove("hover-text-top"));
 
-        headerButtons.forEach((button) => button.classList.add("headerbtns-bottom"));
+        headerButtons.forEach((button) =>
+          button.classList.add("headerbtns-bottom")
+        );
         nameElements.forEach((name) => name.classList.add("name-bottom"));
         menuBtn?.classList.add("menu-btn-bottom");
         hoverSpan.forEach((span) => span.classList.add("hover-text-bottom"));
@@ -95,7 +114,7 @@ const Header = () => {
     <header>
       <div className="container">
         <h1 className="hover-text">
-          <a href="/index.html">
+          <a href="/">
             <div className="name">
               <span>A</span>
               <span>l</span>
@@ -117,19 +136,23 @@ const Header = () => {
               <span>a</span>
               <span>n</span>
             </div>
+            {/* <img
+              src="/Caligraphy_white.png"
+              height="300px"
+            ></img> */}
           </a>
         </h1>
 
         <nav className="nav-links">
           <ul>
             <li>
-              <a href="#about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link to="/work">Work</Link>
             </li>
             <li>
-              <a href="#squircle-border">Skills</a>
+              <Link to="/Skills">Skills</Link>
             </li>
           </ul>
         </nav>

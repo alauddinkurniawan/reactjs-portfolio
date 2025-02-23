@@ -1,5 +1,5 @@
 
-import Header from "./components/Home/Header";
+import Header from "./Header";
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import SkillsPage from "./pages/SkillsPage";

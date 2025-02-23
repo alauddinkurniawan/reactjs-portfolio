@@ -162,9 +162,9 @@ const Header = () => {
         <div className="sidebar">
           <button className="close-btn">&times;</button>
           <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#squircle-border">Skills</a>
+            <a href="/about">About</a>
+            <a href="/work">Work</a>
+            <a href="/skills">Skills</a>
           </nav>
         </div>
 

@@ -152,7 +152,7 @@ const Header = () => {
               <Link to="/work">Work</Link>
             </li>
             <li>
-              <Link to="/Skills">Skills</Link>
+              <Link to="/skills">Skills</Link>
             </li>
           </ul>
         </nav>

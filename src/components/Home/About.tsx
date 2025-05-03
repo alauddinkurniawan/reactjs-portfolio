@@ -39,18 +39,10 @@ function About() {
       <div className="about-container">
         <img src="/foto.jpeg" alt="My Photo" className="about-photo" />
         <div className="about-text">
-          <h2>About Me</h2>
+          <h2>Hi, I'm Alki!</h2>
           <p>
-            <b>Alauddin</b>, an undergraduate student at Telkom University
-            majoring in Informatics, with a solid blend of academic and
-            practical experience in game development, UX research, and
-            problem-solving. A strong background in people development gained
-            through active involvement in organizations like AIESEC, Student
-            English Society, and Kontent HIMAF. Focused on leveraging technology
-            to enhance human experiences and create innovative solutions.
-            Passionate about driving positive change through technology, with a
-            commitment to improving user experiences and solving complex
-            challenges in diverse fields.
+          I'm a tech enthusiast, storyteller, and lifelong volunteer with a solid mix of academic and hands-on experience in game development, leadership, UX research, and creative problem-solving.
+          Always excited to learn, build, and collaborate—feel free to reach out and say hello!
           </p>
         </div>
       </div>

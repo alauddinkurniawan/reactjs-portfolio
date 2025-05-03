@@ -349,7 +349,7 @@ header nav ul:has(:hover) :not(:hover) {
 }
 
 .about-text h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #333;
     margin-top : 10px;
     margin-bottom: 10px;
@@ -358,7 +358,7 @@ header nav ul:has(:hover) :not(:hover) {
 }
 
 .about-text p {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #555;
     line-height: 1.6;
     padding-right: 20px;

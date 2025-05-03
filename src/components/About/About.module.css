@@ -1,0 +1,153 @@
+.container {
+  background: white;
+  font-family: kelvetica;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.section h2:hover {
+  color: #fbc02d;
+}
+
+.section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.section h3:hover {
+  color: #fbc02d;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.experienceSection {
+  margin-bottom: 3rem;
+  text-align: left;
+  background: #f4f4f4;
+  margin: 3rem -2rem;
+  padding: 3rem 2rem;
+}
+
+.experienceSection h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.experienceSection h2:hover {
+  color: #fbc02d;
+}
+
+.experienceSection h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.experienceSection h3:hover {
+  color: #fbc02d;
+}
+
+.experienceSection p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.timelineItem {
+  border-left: 4px solid #fbc02d;
+  padding-left: 1.5rem;
+  margin-bottom: 2.5rem;
+  transition: border-color 0.3s;
+}
+
+.timelineItem:last-child {
+  margin-bottom: 0;
+}
+
+.timelineItem:hover {
+  border-color: #333;
+}
+
+.timelineItem h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.period {
+  color: #fbc02d;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.interestCard {
+  background: white;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s;
+}
+
+.interestCard:last-child {
+  margin-bottom: 0;
+}
+
+.interestCard:hover {
+  border-color: #fbc02d;
+}
+
+.introText {
+  font-size: 1.25rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .section h3 {
+    font-size: 1.25rem;
+  }
+
+  .experienceSection {
+    margin: 2rem -1.5rem;
+    padding: 2rem 1.5rem;
+  }
+}

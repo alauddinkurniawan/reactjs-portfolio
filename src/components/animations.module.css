@@ -1,0 +1,28 @@
+.fadeIn {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.17, 0.55, 0.55, 1);
+  will-change: opacity, transform;
+}
+
+.fadeIn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sequential animation delays */
+.delay1.visible {
+  transition-delay: 0.1s;
+}
+
+.delay2.visible {
+  transition-delay: 0.2s;
+}
+
+.delay3.visible {
+  transition-delay: 0.3s;
+}
+
+.delay4.visible {
+  transition-delay: 0.4s;
+}

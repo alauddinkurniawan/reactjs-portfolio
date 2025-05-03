@@ -19,22 +19,16 @@ const AboutPage = () => {
         ref={intro.ref}
         className={`${styles.section} ${animStyles.fadeIn} ${animStyles.delay1} ${intro.isVisible ? animStyles.visible : ''}`}
       >
-        <h2>Hello, I'm [Your Name]</h2>
+        <h2>Hello, I'm Alki!</h2>
         <p className={styles.introText}>
-          A passionate [Your Role] based in [Your Location], with a focus on creating
-          meaningful and impactful digital experiences.
-        </p>
-        
-        <h3>My Journey</h3>
-        <p>
-          [Brief description of your background, education, and career path.
-          What inspired you to get into this field?]
+          A passionate Informatics major based in Indonesia, with a focus on creating
+          meaningful and impactful experiences.
         </p>
         
         <h3>What I Do</h3>
         <p>
-          [Describe your main areas of expertise, your approach to work,
-          and what makes you unique in your field.]
+          As the home page says, I am a passionate Tech Enthusiast with various blends of skills and experiences. Currently, I am working as a Game Developer at Animesme
+          Even though that, I am always open to new opportunities to help people and make a difference in the world.
         </p>
       </section>
 
@@ -94,7 +88,7 @@ const AboutPage = () => {
       </section>
 
       
-    </div>
+    </div> 
     <Footer />
     </>
   );

@@ -145,9 +145,9 @@ const Header = () => {
 
         <nav className="nav-links">
           <ul>
-            <li>
+            {/* <li>
               <Link to="/about">About</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/work">Work</Link>
             </li>

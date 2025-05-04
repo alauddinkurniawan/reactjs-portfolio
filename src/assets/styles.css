@@ -13,9 +13,7 @@ html, body {
     scroll-snap-type:proximity;
 }
 
-body {
-    overflow-x: hidden;
-}
+
 
 a {
     text-decoration: none !important;
@@ -119,7 +117,7 @@ header {
     top: 0;
 
     width: 100%;
-    padding: 0.75rem 3.5rem;
+    padding: 0.5rem 3.5rem;
     z-index: 10;
     transition: top 0.3s ease-in-out, background-color 0.2s ease-in-out; /* Smooth transition for hiding/showing */
     display: flex;
@@ -185,7 +183,7 @@ header nav ul {
     text-align: center;
     padding: 0;
     margin: 0 !important;
-
+    
 }
 
 .nav-links {
@@ -195,6 +193,10 @@ header nav ul {
 
     position: absolute;
     right : 3.5rem;
+}
+
+.nav-links ul li {
+    font-size: 1.3rem;
 }
 
 header nav ul li {
@@ -323,13 +325,9 @@ header nav ul:has(:hover) :not(:hover) {
     display: flex;
     justify-items: center;
     align-items: center;
-    gap: 50px;
-
+    gap: 25px;
 
     padding: 50px;
-    margin-top : 30px;
-    margin-bottom: 30px;
-    
 }
 
 .about-photo {
@@ -357,9 +355,33 @@ header nav ul:has(:hover) :not(:hover) {
     color: white;
     margin-top : 10px;
     margin-bottom: 10px;
-    
+    font-weight : bold;
+}
+
+.about-button {
+    padding : 2rem 0;
+
+    display: flex;
+    width : fit-content;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    list-style: none;
+    color : white;
+    gap: 5px; /* Adjust spacing between items */
+    font-family: kelvetica, Arial, sans-serif;
+    transition: color 0.1s ease-in-out;
+    cursor : default;
+    font-weight : bold;
+}
+
+.about-button:hover {
+    color: #fbc02d;
+    transition: color 0.1s ease-in-out;
+    user-select: none;
     
 }
+
 
 .about-text p {
     font-size: 1.5em;
@@ -467,7 +489,7 @@ footer {
 }
 
 /* Responsive Styles */
-@media (max-width: 750px) {
+@media (max-width: 750px) and (max-height: 800px) {
 
     .nav-links {
         display: none; /* Hide the navigation links */
@@ -543,6 +565,14 @@ footer {
         overflow-wrap: break-word; /* Break long words (alternative) */
         white-space: normal;       /* Ensure wrapping */
         max-width: 100%; 
+    }
+    
+    .about-button{
+        width: auto;
+        flex: 0 0 auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     #squircle-border {

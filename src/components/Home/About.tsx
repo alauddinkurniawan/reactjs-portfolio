@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function About() {
   const scrollerRef = useRef<HTMLDivElement>(null);
@@ -39,11 +40,12 @@ function About() {
       <div className="about-container">
         <img src="/foto.jpeg" alt="My Photo" className="about-photo" />
         <div className="about-text">
-          <h2>Hi, meet Alki!</h2>
+          <h2><b>Hi, I'm Alki!</b></h2>
           <p>
           A tech enthusiast, storyteller, and lifelong volunteer with a solid mix of academic and hands-on experience in game development, leadership, UX research, and creative problem-solving.
           Always excited to learn, build, and collaborate—feel free to reach out and say hello!
           </p>
+          <Link className="about-button" to="/">Get to know me more! <span className="material-symbols-outlined">arrow_forward</span></Link>
         </div>
       </div>
       <div className="container" ref={scrollerRef}>

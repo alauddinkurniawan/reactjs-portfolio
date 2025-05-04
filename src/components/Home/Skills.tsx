@@ -6,7 +6,6 @@ function Skills() {
         <ul>
           <li>UI/UX Design</li>
           <li>Game Programming</li>
-          <li>Unity Implementation</li>
           <li>UX Research</li>
           <li>Project Management</li>
           <li>Software Engineering</li>
@@ -14,6 +13,7 @@ function Skills() {
           <li>Quality Assurance</li>
           <li>ESL / English (C1)</li>
           <li>Teaching</li>
+          <li>Leadership</li>
         </ul>
       </div>
     </section>

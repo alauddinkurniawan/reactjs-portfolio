@@ -39,9 +39,9 @@ function About() {
       <div className="about-container">
         <img src="/foto.jpeg" alt="My Photo" className="about-photo" />
         <div className="about-text">
-          <h2>Hi, I'm Alki!</h2>
+          <h2>Hi, meet Alki!</h2>
           <p>
-          I'm a tech enthusiast, storyteller, and lifelong volunteer with a solid mix of academic and hands-on experience in game development, leadership, UX research, and creative problem-solving.
+          A tech enthusiast, storyteller, and lifelong volunteer with a solid mix of academic and hands-on experience in game development, leadership, UX research, and creative problem-solving.
           Always excited to learn, build, and collaborate—feel free to reach out and say hello!
           </p>
         </div>

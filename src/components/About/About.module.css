@@ -1,5 +1,9 @@
+
+body {
+  background-color: black;
+}
 .container {
-  background: white;
+  background: transparent;
   font-family: kelvetica;
   max-width: 600px;
   margin: 0 auto;
@@ -15,7 +19,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: white;
   transition: color 0.3s;
 }
 
@@ -27,7 +31,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #333;
+  color: whitesmoke;
   transition: color 0.3s;
 }
 
@@ -37,7 +41,7 @@
 
 .section p {
   font-size: 1.1rem;
-  color: #555;
+  color: wheat;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -45,7 +49,7 @@
 .experienceSection {
   margin-bottom: 3rem;
   text-align: left;
-  background: #f4f4f4;
+  background: transparent;
   margin: 3rem -2rem;
   padding: 3rem 2rem;
 }
@@ -54,7 +58,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: snow;
   transition: color 0.3s;
 }
 
@@ -66,7 +70,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #333;
+  color: snow;
   transition: color 0.3s;
 }
 
@@ -76,7 +80,7 @@
 
 .experienceSection p {
   font-size: 1.1rem;
-  color: #555;
+  color: snow;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -93,13 +97,13 @@
 }
 
 .timelineItem:hover {
-  border-color: #333;
+  border-color: #fbc02d;
 }
 
 .timelineItem h3 {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #333;
+  color: snow;
   margin-bottom: 0.5rem;
 }
 
@@ -110,7 +114,7 @@
 }
 
 .interestCard {
-  background: white;
+  background: transparent;
   border: 2px solid #eee;
   border-radius: 8px;
   padding: 1.5rem;
@@ -128,7 +132,7 @@
 
 .introText {
   font-size: 1.25rem;
-  color: #555;
+  color: white;
   line-height: 1.7;
   margin-bottom: 2rem;
 }

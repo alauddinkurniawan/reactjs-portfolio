@@ -15,6 +15,7 @@ html, body {
 
 body {
     overflow-x: hidden;
+    background-color: black;
 }
 
 a {
@@ -320,6 +321,11 @@ header nav ul:has(:hover) :not(:hover) {
 /* General Section Styles */
 .container {
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /* About Me Section */
@@ -502,6 +508,63 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 750px) {
+    html, body {
+        width: 100vw;
+        min-width: 0;
+        overflow-x: hidden;
+    }
+    .container {
+        max-width: 95vw;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    section, main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 0;
+    }
+    .about-photo {
+        width: 60vw;
+        max-width: 220px;
+        min-width: 90px;
+        margin-left: 0;
+    }
+    .about-text {
+        padding: 0 4px;
+        margin: 0;
+        max-width: 100vw;
+        text-align: center;
+    }
+    .card {
+        min-width: 0;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hero, .hero-container {
+        height: auto;
+        min-height: 70vh;
+        padding: 24px 0;
+    }
+    #hero h1, #hero h2 {
+        font-size: 1.3rem;
+        width: 100%;
+        padding: 0;
+    }
+    #hero p {
+        font-size: 1rem;
+        max-width: 95vw;
+    }
+    #projects {
+        padding: 1rem 0.5rem;
+        height: auto;
+    }
+
+}
 
     .nav-links {
         display: none; /* Hide the navigation links */
@@ -591,7 +654,7 @@ footer {
         text-align: center;
     }
 
-}
+
 
 /*#region Hero-Section */
 #hero {

@@ -8,13 +8,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    width : 100%;
+
+
     scroll-behavior: smooth;
-    scroll-snap-type:proximity;
+    scroll-snap-type: proximity;
 }
 
 body {
-    overflow-x: hidden;
     background-color: black;
 }
 
@@ -564,7 +564,6 @@ footer {
         height: auto;
     }
 
-}
 
     .nav-links {
         display: none; /* Hide the navigation links */
@@ -653,20 +652,20 @@ footer {
     #squircle-border {
         text-align: center;
     }
-
+}
 
 
 /*#region Hero-Section */
 #hero {
     position: relative;
     color: #fff;
-
     padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 100svh; 
+    height: 100svh;
+    width: 100%;
 }
 
 #hero::before {

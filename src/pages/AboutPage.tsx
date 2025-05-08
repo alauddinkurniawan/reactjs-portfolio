@@ -11,8 +11,10 @@ const AboutPage = () => {
 
   return (
     <>
-    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, width:'100%', height: 80, pointerEvents: 'none', background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%)' }} />
+    
     <Hero />
+    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, width:'100%', height: 80, pointerEvents: 'none', background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 100%)' }} />
+    <main style={{ background: 'linear-gradient(180deg, #000 0%, #fbc02d 100%)', minHeight: '100vh', fontFamily: 'Inter, sans-serif' }}>
     <div className={styles.container}>
       
       {/* Personal Introduction Section */}
@@ -87,9 +89,8 @@ const AboutPage = () => {
           </p>
         </div>
       </section>
-
-      
     </div> 
+    </main>
     <Footer />
     </>
   );

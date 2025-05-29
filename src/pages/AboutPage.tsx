@@ -44,17 +44,25 @@ const AboutPage = () => {
         
         {/* Experience Item */}
         <div className={styles.timelineItem}>
-          <h3>[Company/Position]</h3>
+          <h3>[Nabati Group / IT Consultant Intern]</h3>
           <p className={styles.period}>[Time Period]</p>
           <p>
-            [Description of your role and key achievements]
+            [Description of role and key achievements]
+          </p>
+        </div>
+
+        <div className={styles.timelineItem}>
+          <h3>[Animesme / Game Programmer Intern]</h3>
+          <p className={styles.period}>[Time Period]</p>
+          <p>
+            [Description of role and key achievements]
           </p>
         </div>
         
         {/* Education Item */}
         <div className={styles.timelineItem}>
-          <h3>[University/School]</h3>
-          <p className={styles.period}>[Degree] - [Year]</p>
+          <h3>[Telkom University]</h3>
+          <p className={styles.period}>[S1 Komputer / Bachelor of Informatics] - [2025]</p>
           <p>
             [Brief description of your studies and achievements]
           </p>
